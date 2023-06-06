@@ -1,5 +1,4 @@
-plugins:
-  - jekyll-polyglot
+plugins: [jekyll-polyglot, jekyll-paginate]
 languages: ["en", "ja"]
 default_lang: "en" 
 exclude_from_localization: ["MapTest", "images", "fonts", "javascripts", "stylesheets" ]
