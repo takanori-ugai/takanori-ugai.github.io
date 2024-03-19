@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Home Page of T. Ugai</title>
+    <meta name="description" content="ome Page of T. Ugai">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home Page of T. Ugai">
+    <meta property="og:description" content="Home Page of T. Ugai"></head>
+<body>
+<div id="map" style="width:1200px; height:800px"></div>
+
+<script type="text/javascript" charset="utf-8" src="http://js.api.olp.yahooapis.jp/OpenLocalPlatform/V1/jsapi?appid=dj0zaiZpPWFNN3lVMDNCUkhadyZzPWNvbnN1bWVyc2VjcmV0Jng9N2M-"></script>
+<script type="text/javascript">
+window.onload = function(){
+var ymap = new Y.Map("map");
+var query = "";
+var geocoder = new Y.GeoCoder() ;
+ymap.drawMap(new Y.LatLng(35.659629, 139.381718), 13);
+ymap.addControl(new Y.LayerSetControl());
+ymap.addControl(new Y.ScaleControl());
+ymap.addControl(new Y.SliderZoomControlHorizontal());
+query="東京都三鷹市井の頭";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(11,11), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市絹ケ丘";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市堀之内";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市高尾町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市日吉町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市若松町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(13,13), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市西砂町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(13,13), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市矢崎町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都国立市西";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(9,9), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市七国";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市下柚木";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市明神町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市高幡";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市緑町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(8,8), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市押立町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(9,9), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市八日町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市新町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市砂川町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(17,17), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市元本郷町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市小宮町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市越野";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市武蔵台";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市分梅町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市狭間町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市小柳町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(8,8), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市三沢";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(11,11), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市長沼町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市上砂町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(19,19), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市若葉町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(14,14), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市白糸台";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(15,15), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市八幡町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市深大寺";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(8,8), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都国立市東";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(11,11), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市万町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市散田町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市西平山";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市宮西町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市南大沢";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(13,13), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都国立市富士見台";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(17,17), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市宮町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(8,8), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市横川町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市神明";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市旭が丘";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(20,20), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市新町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市平山";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市裏高尾町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市東芝町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市寺田町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市東浅川町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市晴見町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市緑町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市新井";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市高倉町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市中山";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市子安町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市栄町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市上野町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市石川町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市百草";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市富士町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市鑓水";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市旭町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都国立市青柳";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市栄町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(16,16), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市片倉町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市柏町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市羽衣町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市山田町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市日新町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市豊田";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(9,9), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市天神町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市日野台";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市北野町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市西府町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市是政";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(16,16), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市中原";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(12,12), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市南町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市本町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(11,11), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市別所";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(15,15), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市高松町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市大楽寺町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市松木";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市初沢町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市錦町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(28,28), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市南平";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(17,17), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市左入町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市幸町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市東豊田";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(8,8), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市久保山町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市諏訪町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市館町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市大船町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市西浅川町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市椚田町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市片町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市犬目町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市本宿町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市井口";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(14,14), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市美好町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(11,11), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市北野台";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市宮下町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市宮";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市寿町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市本町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市上柚木";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市四谷";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(11,11), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市西片倉";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市並木町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市中野町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市大沢";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(11,11), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市浅間町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市東平山";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市叶谷町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市みなみ野";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(8,8), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市万願寺";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(16,16), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市北野";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(9,9), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市南陽台";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市柴崎町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(9,9), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市紅葉丘";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市暁町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市大塚";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市西寺方町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市めじろ台";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市川辺堀之内";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市大和田町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市西原町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市幸町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(14,14), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市上壱分方町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市大坂上";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市石田";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市曙町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(13,13), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市府中町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(14,14), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市長房町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都国立市谷保";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市戸吹町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市宇津木町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市八幡町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市上連雀";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(25,25), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市川口町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市弐分方町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都国立市中";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(8,8), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市松が谷";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市日野";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(15,15), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市一番町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市下恩方町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市緑町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市大谷町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市新川";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市野崎";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市牟礼";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(28,28), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都国立市泉";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市泉町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市中野山王";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市多磨町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市四谷町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市小比企町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市中野上町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(3,3), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市千人町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(9,9), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市東中野";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市台町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市八木町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市北山町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市清水が丘";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市栄町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(6,6), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市多摩平";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(18,18), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市程久保";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市元八王子町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(5,5), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市日鋼町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市日野本町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都国立市北";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(2,2), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市新町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(7,7), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都立川市富士見町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(22,22), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市元横山町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(4,4), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都日野市落川";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(9,9), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市鹿島";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(1,1), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市楢原町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(8,8), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都府中市住吉町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都三鷹市下連雀";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(39,39), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+query="東京都八王子市打越町";
+geocoder.execute({query: query}, function(result) {
+if(result.features.length >0) {
+	    if(result.features[0].latlng) { 
+     var strokeStyle = new Y.Style("00ff00", 2, 0.5) ;
+     var fillStyle = new Y.Style("00ff00", null, 0.5);
+     var circle = new Y.Circle(result.features[0].latlng, new Y.Size(10,10), {unit:"pixel", strokeStyle: strokeStyle, fillStyle: fillStyle});
+     ymap.addFeature(circle) ;
+         }
+      }
+});
+
+}
+</script>
+</body>
+</html>

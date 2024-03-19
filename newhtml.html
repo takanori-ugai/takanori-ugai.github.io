@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Home Page of T. Ugai</title>
+    <meta name="description" content="ome Page of T. Ugai">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home Page of T. Ugai">
+    <meta property="og:description" content="Home Page of T. Ugai">
+</head>
+<body>
+<div id="map" style="width:1200px; height:800px"></div>
+
+<script type="text/javascript" charset="utf-8"
+        src="http://js.api.olp.yahooapis.jp/OpenLocalPlatform/V1/jsapi?appid=dj0zaiZpPWFNN3lVMDNCUkhadyZzPWNvbnN1bWVyc2VjcmV0Jng9N2M-"></script>
+<script type="text/javascript">
+    window.onload = function() {
+        var ymap = new Y.Map("map");
+        ymap.drawMap(new Y.LatLng(35.58249083333334, 139.64247055555555), 17);
+        ymap.addControl(new Y.LayerSetControl());
+        ymap.addControl(new Y.ScaleControl());
+        ymap.addControl(new Y.SliderZoomControlHorizontal());
+        var marker = new Y.Marker(new Y.LatLng(35.58249083333334, 139.64247055555555), {title: '<img src="IMG_20140220_131118.jpg")" width="128">Test'});
+        ymap.addFeature(marker);
+    }
+</script>
+</body>
+</html>            

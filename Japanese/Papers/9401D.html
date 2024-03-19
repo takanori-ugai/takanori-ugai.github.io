@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>プロセスの再配置が可能なストリームベース並列プログラミング言語</title>
+    <meta name="description" content="プロセスの再配置が可能なストリームベース並列プログラミング言語">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="プロセスの再配置が可能なストリームベース並列プログラミング言語">
+    <meta property="og:description" content="プロセスの再配置が可能なストリームベース並列プログラミング言語">
+</HEAD>
+<BODY>
+題名 : プロセスの再配置が可能なストリームベース並列プログラミング言語<BR>
+著者 : 鵜飼孝典(UGAI Takanori), 山中英樹(YAMANAKA, Hideki),
+上田晴康(UEDA, Haruyasu)<BR>
+出典 : 情報処理学会, プログラム-理論・基礎・実践-研究会, 1994. 7. 21<BR>
+文書本体: 出典をご覧下さい<BR>
+<p>
+    概要 : 分散環境上で並列に複数のプロセスが動作するプログラムを記述する
+    ためのプログラミング言語 Sushi について報告する．Sushi では,並列に動作する
+    計算モジュール(プロセス)をストリームで結ぶことによってプログラミングを行な
+    い, さらに分散環境上の資源を効率良く利用するために,複数の計算機上のプロセ
+    スをプログラムの実行中に再配置を行なうための記述 (アノテーション)をユーザ
+    が付加できる．Sushi プログラムでは,アノテーションをプロセスの実行中に何度
+    も計算することにより,プログラムの実行時に, その実行される環境，実行状態を
+    細かく反映することが可能である. また計算部分とアノテーションを独立して記述
+    するため,それぞれ独立な再利用が可能である．
+<p>
+    概要 : In this paper, we show a parallel programming language Sushi,
+    focusing on the features designed to improve productivity of programmers
+    using parallel computers or a cluster of single CPU computers. A program
+    for such parallel computers includes how an algorithm is described, and
+    how to tune this. A sushi program consists of a computation part (a set of
+    process descriptions and their connections by streams) and an annotation
+    part. Processes can work concurrently communicating each other by streams.
+    An annotation part does not affect the algorithm of a computation part but
+    controls process migration and the scheduling priority of processes. With
+    the annotation, programmers can use parallel computers flexibly and
+    effectively.
+</BODY>
+</HTML>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>中継サーバの構造とその構築法</title>
+    <meta name="description" content="中継サーバの構造とその構築法">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="中継サーバの構造とその構築法">
+    <meta property="og:description" content="中継サーバの構造とその構築法">
+</HEAD>
+<BODY>
+BWNo. : UGAI-94-04-D<BR>
+題名 : 中継サーバの構造とその構築法 --- クライアントサーバ間の通信の効率化の一提案 ---<BR>
+著者 : 鵜飼孝典(UGAI, Takanori)<BR>
+出典 : 情報処理学会 ソフトウェア工学研究会<BR>
+連絡先 : ugai@fujitsu.com
+<p>
+
+    概要 :
+    WAN (Wide Area Network) 上に分散して配置されたサーバ群とそれらへアクセスす
+    るクライアントからなるシステムにおいてクライアントからのリクエストを中継
+    し,そこから各サーバへリクエストを再配送することを行ない,またサーバからの答
+    えをある程度処理したうえでクライアントへ答えを返す中継サーバを複数配置する
+    ことによって, 全体の効率を上げる.<BR>
+
+    本稿では, このような中継サーバ群の開発において有効なソフトウェアの構造につ
+    いて述べ, 例として Internet 上のデータベースを検索するための中継サーバの,
+    現在提案中のネットワークの構成に細かく対応したプログラミングが可能な並列分
+    散プログラミング言語 Sushi での開発について報告する.
+<p>
+
+    概要 :
+    In this paper, we present a structure of an intermediet server between
+    clients and distributed databases. The server relays querys from clients
+    to the databases and replies to clients, and data transfer between the
+    servers is compressed or is translated on another protocol, which enables
+    us to use distributed database on a multi protocol network. The server can
+    have some functions for filtering or modifying data on databases. We can
+    access distributed databases efficiently using a cluster of the servers.
+
+    We also present an application using the proposed structural servers,
+    which is for multiple NNTP servers.
+</BODY>
+</HTML>

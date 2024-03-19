@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>プログラミング言語 Sushi の概要</title>
+    <meta name="description" content="プログラミング言語 Sushi の概要">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sプログラミング言語 Sushi の概要">
+    <meta property="og:description" content="プログラミング言語 Sushi の概要">
+</HEAD>
+<BODY>
+題名 : プログラミング言語 Sushi の概要 <BR>
+著者 : 鵜飼孝典(UGAI Takanori)<BR>
+出典 : 情報研リサーチレポート<BR>
+文書本体: <a href="file://ftp.cs.titech.ac.jp/lab/saeki/salab/ugai/Overview.ps">
+    sa-ftp.cs.titech.ac.jp:/salab/ugai/Overview.ps </a>
+<p>
+    概要 : Sushi では, 並列に動作する計算モジュール(プロセス)を
+    ストリームで結ぶことによってプログラミングを行ない, さらに分散環境
+    上の資源を効率良く利用するために, 複数の計算機のプロセスをプログラム
+    の実行中に再配置を行なうための記述(アノテーション)をユーザが付加できる.
+    本稿では, C 言語を知っていると仮定して Sushi の計算部分について
+    説明を行なう.
+<p>
+    概要 : A Sushi program consists of a computation part (a description of
+    a set of processes and their connections by streams) and an annotation
+    part. Processes can work concurrently communicating each other by streams.
+    An annotation part does not affect the algorithm of a computation part but
+    controls process migration and the scheduling priority of processes. With
+    the annotation, programmers can use parallel computers flexibly and
+    effectively. In this paper we present overview of the computation part of
+    Sushi.
+</BODY>
+</HTML>
