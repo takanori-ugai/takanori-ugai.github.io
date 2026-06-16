@@ -10,17 +10,17 @@
 <url>
   <loc>https://takanori-ugai.github.io/home.html</loc>
   <priority>0.8</priority>
-  <lastmod>2024-03-19T16:48:37+09:00</lastmod>
+  <lastmod>2026-06-17T00:00:02+09:00</lastmod>
 </url>
 <url>
   <loc>https://takanori-ugai.github.io/Japanese/profile.html</loc>
   <priority>0.8</priority>
-  <lastmod>2024-03-19T16:48:37+09:00</lastmod>
+  <lastmod>2026-06-17T00:00:02+09:00</lastmod>
 </url>
 <url>
   <loc>https://takanori-ugai.github.io/Japanese/vitae.html</loc>
   <priority>0.8</priority>
-  <lastmod>2024-03-19T16:48:37+09:00</lastmod>
+  <lastmod>2026-06-17T00:00:02+09:00</lastmod>
 </url>
 <url>
   <loc>https://takanori-ugai.github.io/Japanese/JASI.html</loc>
@@ -75,7 +75,12 @@
 <url>
   <loc>https://takanori-ugai.github.io/English/profile.html</loc>
   <priority>0.7</priority>
-  <lastmod>2024-03-19T16:48:37+09:00</lastmod>
+  <lastmod>2026-06-17T00:00:02+09:00</lastmod>
+</url>
+<url>
+  <loc>https://takanori-ugai.github.io/English/vitae.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2026-06-17T00:00:02+09:00</lastmod>
 </url>
 <url>
   <loc>https://takanori-ugai.github.io/English/FDT.html</loc>
