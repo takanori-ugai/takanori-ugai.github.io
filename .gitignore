@@ -1,0 +1,13 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings
+.idea/
+.vscode/
+
+# Swap and backup files
+*.swp
+*.swo
+*~
