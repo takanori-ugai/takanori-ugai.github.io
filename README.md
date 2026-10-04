@@ -1,17 +1,28 @@
 # Takanori Ugai Personal Homepage
 
-This repository hosts the personal homepage of Takanori Ugai.
+This repository contains Takanori Ugai's personal website in Japanese and English.
 
-## Biography
+## Profile
 
-Takanori Ugai is a Japanese researcher whose work has centered on software engineering, knowledge technologies, and artificial intelligence. He graduated from Tokyo Institute of Technology, earned a Doctor of Engineering in 2012, and joined Fujitsu Research Laboratories in 1992.
+Takanori Ugai is a researcher in software engineering, knowledge technologies, and artificial intelligence. He earned a Doctor of Engineering from Tokyo Institute of Technology in 2012. Since August 2026, he has been an Invited Researcher at the Artificial Intelligence Research Center of the National Institute of Advanced Industrial Science and Technology (AIST).
 
-### Timeline
+### Career history
 
-- 1986: Entered Tokyo Institute of Technology.
-- 1990: Graduated from the Department of Computer Science and Engineering, Tokyo Institute of Technology.
-- 1992: Completed the master's program in electrical and electronic engineering at Tokyo Institute of Technology and joined Fujitsu Research Laboratories.
-- 1996-1998: Served in the ANSA program in the United Kingdom.
-- 1999-2019: Worked across research groups covering document processing, IT media, knowledge research, and AI-related projects.
-- 2009-2012: Pursued doctoral studies at Tokyo Institute of Technology and earned a Doctor of Engineering.
-- 2018-present: Continued work in AI and digital knowledge-related research.
+- 1986: Entered Tokyo Institute of Technology; graduated in 1990.
+- 1990-1992: Completed a master's program in electrical and electronic engineering.
+- 1992-2021: Researcher at Fujitsu Laboratories; worked on the ANSA project in the UK in 1996-1998.
+- 2009-2012: Doctoral studies in computational science and engineering; earned a Doctor of Engineering.
+- 2021-2026: Senior Researcher at Fujitsu; also held research appointments at AIST.
+- Since August 2026: Invited Researcher at AIST's Artificial Intelligence Research Center.
+
+## Website
+
+- Japanese home page: [index.html](https://takanori-ugai.github.io/index.html)
+- English home page: [home.html](https://takanori-ugai.github.io/home.html)
+- Japanese curriculum vitae: [Japanese/vitae.html](https://takanori-ugai.github.io/Japanese/vitae.html)
+- English curriculum vitae: [English/vitae.html](https://takanori-ugai.github.io/English/vitae.html)
+- Japanese publications: [Japanese/Papers.html](https://takanori-ugai.github.io/Japanese/Papers.html)
+- English publications: [English/Papers.html](https://takanori-ugai.github.io/English/Papers.html)
+- Japanese patents and applications: [Japanese/patents.html](https://takanori-ugai.github.io/Japanese/patents.html)
+
+The publication pages include peer-reviewed papers and research reports. The Japanese patent page lists international, domestic, and overseas patent publications and applications.
