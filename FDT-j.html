@@ -1,50 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>FDT in Japan</title>
-    <meta name="description" content="FDT in Japan">
+    <title>日本の形式仕様記述・形式手法リソース</title>
+    <meta name="description" content="形式仕様記述技術（FDT）と形式手法に関する規格、日本語の学習資料、研究資料へのリンク集です。">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="FDT in Japan">
-    <meta property="og:description" content="FDT in Japan">
-
+    <meta property="og:title" content="日本の形式仕様記述・形式手法リソース">
+    <meta property="og:description" content="形式仕様記述技術（FDT）と形式手法に関する規格、日本語の学習資料、研究資料へのリンク集です。">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
+    <style>
+        .fdt-hero { margin: 0 calc(clamp(1rem, 4vw, 3rem) * -1) 2rem; padding: 2.5rem clamp(1rem, 4vw, 3rem); background: linear-gradient(130deg, #e6f2ef, #f5f8f7 65%, #e9f0f5); }
+        .fdt-label { color: #147d78; letter-spacing: .12em; }
+        .resource-card { height: 100%; border: 1px solid #e3eae8; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem rgba(23,42,58,.04); }
+        .resource-card a { text-decoration: none; }
+        .resource-card a:hover { text-decoration: underline; }
+    </style>
 </head>
-<BODY>
-<nav class="site-nav d-flex justify-content-between align-items-center" aria-label="Language"><a class="site-brand" href="index.html">鵜飼 孝典</a><a href="home.html" lang="en">English</a></nav>
+<body>
+    <nav class="site-nav d-flex justify-content-between align-items-center" aria-label="言語">
+        <a class="site-brand" href="index.html">鵜飼 孝典</a>
+        <a href="home.html" lang="en">English</a>
+    </nav>
 
-<H2>
-    <a href="zstandard/FAQ.html">Z の標準化に関する FAQ</a>
-</H2>
+    <main>
+        <header class="fdt-hero">
+            <p class="fdt-label text-uppercase fw-semibold small mb-2">Formal Description Techniques</p>
+            <h1 class="display-6 fw-bold">日本の形式仕様記述・形式手法リソース</h1>
+            <p class="lead text-secondary mb-0">仕様を数学的な記法で明確に表し、モデルの性質を分析・検証するための規格、学習資料、研究情報をまとめています。</p>
+        </header>
 
-<H2>日本における形式的仕様記述言語に関する研究</H2>
+        <section class="mb-5" aria-labelledby="fdt-about">
+            <h2 id="fdt-about" class="h3 mb-3">形式仕様記述技術（FDT）とは</h2>
+            <p>Formal Description Technique（FDT）は、システムの振る舞いや構造を、定義された構文と意味に基づいて記述する技術です。曖昧さや仕様間の不整合を見つけやすくし、記述したモデルに対する解析や検証を可能にします。形式化した仕様は対象システム全体の正しさを自動的に保証するものではなく、何をモデル化し、どの性質を確認したかを明示することが大切です。</p>
+            <p class="mb-0">FDT は形式手法の一部を指す用語として使われます。形式手法には仕様記述のほか、モデル検査や定理証明などの検証技術も含まれます。</p>
+        </section>
 
-<UL>
-    <LI><A HREF="http://sunfish.ics.es.osaka-u.ac.jp/tanilab.html">
-        大阪大学谷口研究室 (LOTOS group)</A>
-    <LI><A HREF="http://uranus.aist-nara.ac.jp/Formal/formal-j">
-        奈良先端大荒木研</A>
-    <LI><A HREF="http://www.se.cs.titech.ac.jp/">
-        東京工業大学佐伯研</A>
-    <LI><A HREF="http://www.ipa.go.jp/"> IPA </A>
-        <A HREF="http://www.ipa.go.jp/STC/senshin-j.html">
-            先進的情報処理技術開発促進事業</A>の 1 テーマとして
-        実行可能な形式仕様言語システムの研究開発
-</UL>
+        <section class="mb-5" aria-labelledby="standards">
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+                <div><p class="fdt-label text-uppercase fw-semibold small mb-1">Standards</p><h2 id="standards" class="h3 mb-0">LOTOS と E-LOTOS</h2></div>
+                <span class="badge text-bg-light border">規格情報確認日：2026年10月21日</span>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">LOTOS — ISO 8807:1989</h3>
+                        <p>並行・分散システムの振る舞いを記述する形式仕様技術です。ISO の規格情報では、2019年に確認され、現行版として掲載されています。</p>
+                        <a class="fw-semibold" href="https://www.iso.org/standard/16258.html" target="_blank" rel="noopener noreferrer">ISO 8807:1989（ISO） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">E-LOTOS — ISO/IEC 15437:2001</h3>
+                        <p>LOTOS を拡張した言語で、分散・並行システムの振る舞いを記述します。ISO の規格情報では、2008年に確認され、現行版として掲載されています。</p>
+                        <div class="d-flex flex-column gap-2">
+                            <a class="fw-semibold" href="https://www.iso.org/standard/27680.html" target="_blank" rel="noopener noreferrer">ISO/IEC 15437:2001（ISO） <span aria-hidden="true">↗</span></a>
+                            <a href="E-LOTOS.html">E-LOTOS の文書・関連情報（当サイト）</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <p class="text-secondary small mt-3 mb-0">規格の「現行」は、規格が最新技術であることや、現在広く利用されていることを意味するものではありません。規格状態は変更されることがあるため、ISO の公式情報もご確認ください。</p>
+        </section>
 
-<H2> 仕様記述言語の標準化 </H2>
-<UL>
-    <LI><A HREF="E-LOTOS.html">E-LOTOS 最新文書</A>
-</UL>
+        <section class="mb-5" aria-labelledby="learning">
+            <p class="fdt-label text-uppercase fw-semibold small mb-1">Learn &amp; Practice</p>
+            <h2 id="learning" class="h3 mb-3">日本語の学習・実務資料</h2>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">実務家のための形式手法</h3>
+                        <p>2013年に終了した IPA/SEC 事業のアーカイブです。入門教材、モデル化の手順と事例、形式手法の適用事例調査を参照できます。</p>
+                        <a class="fw-semibold" href="https://www.ipa.go.jp/archive/digital/iot-en-ci/keishikisyuho/keishikisyuho.html" target="_blank" rel="noopener noreferrer">IPA の教材・資料一覧 <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">VDM++ による形式仕様記述</h3>
+                        <p>VDM++ の考え方、記述方法、例題を日本語で紹介する資料です。一部の文法資料・例題は2011年更新のため、ツールの対応状況は各公式サイトでもご確認ください。</p>
+                        <a class="fw-semibold" href="https://research.nii.ac.jp/~f-ishikawa/vdm/" target="_blank" rel="noopener noreferrer">国立情報学研究所・VDM++ 資料 <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">形式仕様記述の適用事例</h3>
+                        <p>IPA の事例報告では、対象とする仕様を選び、実開発システムの設計書に形式手法を適用して早期に問題を発見した取り組みが紹介されています。</p>
+                        <a class="fw-semibold" href="https://www.ipa.go.jp/archive/digital/iot-en-ci/keishikisyuho/20120420.html" target="_blank" rel="noopener noreferrer">情報系の実稼働システムを対象とした適用実験（IPA） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">試験シラバスの用語解説</h3>
+                        <p>IPA の情報処理技術者試験シラバスには、形式手法や VDM-SL、VDM++、Z、SPIN などの用語が掲載されています。</p>
+                        <a class="fw-semibold" href="https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014i5-att/syllabus_sc_am2_tsuiho4_0_henkou.pdf" target="_blank" rel="noopener noreferrer">情報処理安全確保支援士試験シラバス追補版（IPA PDF） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <section class="mb-5" aria-labelledby="research">
+            <p class="fdt-label text-uppercase fw-semibold small mb-1">Research in Japan</p>
+            <h2 id="research" class="h3 mb-3">国内の研究動向</h2>
+            <p>以下は学会が公開している講演概要・研究紹介です。VDM++による仕様の分析やテスト支援、形式仕様記述の新しい応用を知る手がかりになります。</p>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <span class="badge text-bg-light border align-self-start mb-2">FIT2023・情報処理学会</span>
+                        <h3 class="h5 fw-bold">VDM++ による組織の整合性・制約条件の記述と検証</h3>
+                        <p>信州大学による研究発表です。勤務シフト表を題材に、組織の制約をVDM++で記述して検査する方法を扱っています。</p>
+                        <a class="fw-semibold" href="https://www.ipsj.or.jp/event/fit/fit2023/abstract/data/html/program/a.html" target="_blank" rel="noopener noreferrer">FIT2023 講演概要（A-020） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <span class="badge text-bg-light border align-self-start mb-2">FIT2023・情報処理学会</span>
+                        <h3 class="h5 fw-bold">画面遷移図から VDM++ 仕様への変換</h3>
+                        <p>香川大学による研究発表です。Webアプリケーションの画面遷移図をVDM++仕様に変換し、精密なテストケースの作成などに活用する手法を議論しています。</p>
+                        <a class="fw-semibold" href="https://www.ipsj.or.jp/event/fit/fit2023/abstract/data/html/program/b.html" target="_blank" rel="noopener noreferrer">FIT2023 講演概要（B-011） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <span class="badge text-bg-light border align-self-start mb-2">2024年度・情報処理学会</span>
+                        <h3 class="h5 fw-bold">LLM を用いた形式仕様記述による検証</h3>
+                        <p>ソフトウェアエンジニアリングシンポジウムの受賞研究として、LLMを用いた形式仕様記述による検証の試行評価が紹介されています。</p>
+                        <a class="fw-semibold" href="https://www.ipsj.or.jp/award/ses-award3.html" target="_blank" rel="noopener noreferrer">SES インタラクティブ賞の受賞研究一覧 <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <span class="badge text-bg-light border align-self-start mb-2">研究分野の紹介</span>
+                        <h3 class="h5 fw-bold">軽量形式手法・解析技術</h3>
+                        <p>日本ソフトウェア科学会の研究紹介では、物理情報システムやAIシステムを対象とした軽量形式手法・解析技術など、関連する研究領域を紹介しています。</p>
+                        <a class="fw-semibold" href="https://ppl.jssst.or.jp/research/" target="_blank" rel="noopener noreferrer">日本ソフトウェア科学会・研究紹介 <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-国内で形式仕様に関する研究に関連するサーバを立ちあげているところは
-是非ご連絡下さい
+        <section class="mb-5" aria-labelledby="related">
+            <h2 id="related" class="h3 mb-3">このサイトの関連ページ</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="zstandard/FAQ.html">Z の標準化に関する FAQ</a></li>
+                <li class="list-group-item"><a href="Japanese/FDT.html">形式的仕様記述言語に関する研究紹介</a></li>
+                <li class="list-group-item"><a href="English/FDT.html">Formal Specification Languages（English）</a></li>
+            </ul>
+        </section>
 
-<HR>
-<address> ugai.takanori@gmail.com</address>
-</BODY>
-</HTML>
+        <p class="text-secondary small">外部資料の内容・公開状況は各提供元でご確認ください。リンク確認日：2026年10月21日。</p>
+    </main>
+
+    <footer class="border-top pt-3 mt-4">
+        <address><a href="mailto:ugai.takanori@gmail.com">ugai.takanori@gmail.com</a></address>
+    </footer>
+</body>
+</html>

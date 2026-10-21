@@ -1,27 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>ソフトウェアプロセス</title>
-    <meta name="description" content="ソフトウェアプロセス">
+    <title>国内のソフトウェアプロセス研究</title>
+    <meta name="description" content="国内のソフトウェアプロセス研究、生成AIを含む新しい開発プロセスの研究事例、関連する国際標準化の動向を紹介します。">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="ソフトウェアプロセス">
-    <meta property="og:description" content="ソフトウェアプロセス">
-
+    <meta property="og:title" content="国内のソフトウェアプロセス研究">
+    <meta property="og:description" content="国内のソフトウェアプロセス研究、生成AIを含む新しい開発プロセスの研究事例、関連する国際標準化の動向を紹介します。">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/site.css" rel="stylesheet">
+    <style>
+        .process-hero { margin: 0 calc(clamp(1rem, 4vw, 3rem) * -1) 2rem; padding: 2.5rem clamp(1rem, 4vw, 3rem); background: linear-gradient(130deg, #e6f2ef, #f5f8f7 65%, #e9f0f5); }
+        .process-label { color: #147d78; letter-spacing: .12em; }
+        .resource-card { height: 100%; border: 1px solid #e3eae8; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem rgba(23,42,58,.04); }
+        .resource-card a { text-decoration: none; }
+        .resource-card a:hover { text-decoration: underline; }
+    </style>
 </head>
-<BODY>
-<nav class="site-nav d-flex justify-content-between align-items-center" aria-label="Language"><a class="site-brand" href="../index.html">鵜飼 孝典</a><a href="../home.html" lang="en">English</a></nav>
+<body>
+    <nav class="site-nav d-flex justify-content-between align-items-center" aria-label="言語">
+        <a class="site-brand" href="../index.html">鵜飼 孝典</a>
+        <a href="../home.html" lang="en">English</a>
+    </nav>
 
-<H2>ソフトウェアプロセス</H2>
+    <main>
+        <header class="process-hero">
+            <p class="process-label text-uppercase fw-semibold small mb-2">Software Process Research in Japan</p>
+            <h1 class="display-6 fw-bold">国内のソフトウェアプロセス研究</h1>
+            <p class="lead text-secondary mb-0">ソフトウェアの企画・要求・設計・実装・テスト・運用を、どのような活動と成果物で進め、品質や有効性をどう確かめるか。その方法と改善を扱う研究・実践資料を紹介します。</p>
+        </header>
 
-<UL>
-    <li><a href="Papers/9301D.html"> RLOTOS によるソフトウェアプロセスの記述</a>
-</UL>
-<HR>
-<address> ugai.takanori@gmail.com</address>
-</BODY>
-</HTML>
+        <section class="mb-5" aria-labelledby="trend">
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+                <div><p class="process-label text-uppercase fw-semibold small mb-1">Recent themes</p><h2 id="trend" class="h3 mb-0">最近の研究テーマ</h2></div>
+                <span class="badge text-bg-light border">調査日：2026年10月21日</span>
+            </div>
+            <p>2025〜2026年の国内発表では、生成AIやAIエージェントを開発活動に組み込む方法と、その過程・成果物をどう確認するかが目立ちます。教育での仕様駆動開発、AI利用開発プロセスの改善、レビューやテストなどの妥当性根拠を残す方法が個別の研究課題として扱われています。</p>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <span class="badge text-bg-light border align-self-start mb-2">2026年・実践的IT教育シンポジウム</span>
+                        <h3 class="h5 fw-bold">AIエージェントを活用した仕様駆動開発のPBL導入</h3>
+                        <p>大阪工業大学の実践報告です。調査・計画・実装・レビューの4工程を定めた開発PBLを分析し、効率向上と、学生がコードを十分理解しないまま進めるリスクの両方を報告しています。</p>
+                        <a class="fw-semibold" href="https://www.jstage.jst.go.jp/article/repit/2026/0/2026_90/_article/-char/ja" target="_blank" rel="noopener noreferrer">論文概要・本文（J-STAGE） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <span class="badge text-bg-light border align-self-start mb-2">2026年・SES2026</span>
+                        <h3 class="h5 fw-bold">PDPによる生成AI利用開発の自己改善プロセス</h3>
+                        <p>「プロセス開発プロセス（PDP）」を用いて、生成AIを利用する開発プロセスを改善する教材を開発・分析した研究です。AIの利用自体に加え、開発の進め方を見直す仕組みを扱っています。</p>
+                        <a class="fw-semibold" href="https://www.ipsj.or.jp/checkit/AI.html" target="_blank" rel="noopener noreferrer">研究情報（情報処理学会・生成AI/AIエージェント資料一覧） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <span class="badge text-bg-light border align-self-start mb-2">2025年発表・2026年公開</span>
+                        <h3 class="h5 fw-bold">AI開発の過程と妥当性根拠の可視化</h3>
+                        <p>生成AIを導入した開発で、活動、成果物、要件、担当者、レビュー記録やテスト結果の関係を可視化する手法です。開発過程の透明性と品質保証の根拠を追えるようにする課題を扱います。</p>
+                        <a class="fw-semibold" href="https://doi.org/10.11309/fose.32.0_191" target="_blank" rel="noopener noreferrer">論文情報（ソフトウェア工学の基礎ワークショップ・J-STAGE） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <span class="badge text-bg-light border align-self-start mb-2">2025年・情報処理学会第87回全国大会</span>
+                        <h3 class="h5 fw-bold">生成AIによる自動開発とアジャイル・リーンプロセス</h3>
+                        <p>マルチエージェント型の自動開発で、タスクを細分化し、アジャイルやリーンの考え方を導入した場合の生成物の品質を検討する発表です。</p>
+                        <a class="fw-semibold" href="https://www.ipsj.or.jp/event/taikai/87/WEB/data/pdf/4L-02.html" target="_blank" rel="noopener noreferrer">講演概要（情報処理学会） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5" aria-labelledby="standards">
+            <p class="process-label text-uppercase fw-semibold small mb-1">Standards &amp; practice</p>
+            <h2 id="standards" class="h3 mb-3">ライフサイクル規格とプロセス評価</h2>
+            <div class="resource-card card p-4">
+                <p>情報規格調査会（IPSJ/ITSCJ）のSC 7専門委員会による2025年度活動報告では、ソフトウェアライフサイクル規格 ISO/IEC/IEEE 12207 の改訂が発行準備段階に進んだこと、小規模組織向け ISO/IEC 29110 シリーズの改訂とアジャイル開発ガイドの開発、ISO/IEC 33060・33062・33064 のプロセスアセスメント規格の発行が報告されています。また、AIシステムのライフサイクルプロセス評価モデル ISO/IEC 25704 の検討も記載されています。</p>
+                <p class="mb-3">これは研究論文そのものではありませんが、国内委員会が参加する国際標準化の最新動向を追う一次資料です。規格の発行段階と作業中の提案を区別して読む際にも役立ちます。</p>
+                <a class="fw-semibold" href="https://itscj.ipsj.or.jp/committee-activities/report/SC7-2025.html" target="_blank" rel="noopener noreferrer">SC 7 専門委員会 2025年度活動報告（情報規格調査会） <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="mb-5" aria-labelledby="overview">
+            <h2 id="overview" class="h3 mb-3">国内研究の動向を追う</h2>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">情報処理学会 ソフトウェア工学研究会</h3>
+                        <p>2025年度の活動報告では、要求分析からテストまでの研究とともに、LLM・生成AIを用いたコード生成、テスト生成、バグ修正、脆弱性検出などの発表が増えたと総括しています。2026年の研究発表も含め、国内の研究テーマをたどる入口になります。</p>
+                        <a class="fw-semibold" href="https://www2.ipsj.or.jp/kenkyukai/report2025.html" target="_blank" rel="noopener noreferrer">2025年度研究会活動報告 <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">ソフトウェアプロセスの研究報告一覧</h3>
+                        <p>要求、開発管理、メトリクス、品質、ソフトウェアプロセス、開発の知能化・自動化などを対象に、研究会やシンポジウムの発表を継続して公開しています。</p>
+                        <a class="fw-semibold" href="https://www.ipsj.or.jp/kenkyukai/bunya2026.html" target="_blank" rel="noopener noreferrer">2026年度 研究会取扱い分野（情報処理学会） <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5" aria-labelledby="archive">
+            <h2 id="archive" class="h3 mb-3">これまでの研究</h2>
+            <div class="resource-card card p-4">
+                <p>ソフトウェアプロセスを形式仕様で記述する研究の一例として、RLOTOSによる記述を公開しています。現在のプロセス研究とは時代背景や手法が異なる、過去の研究資料です。</p>
+                <a class="fw-semibold" href="Papers/9301D.html">RLOTOS によるソフトウェアプロセスの記述（1993年）</a>
+            </div>
+        </section>
+
+        <p class="text-secondary small">リンクと公開情報を2026年10月21日に確認しました。研究発表の掲載情報は各学会・論文公開サイトをご確認ください。</p>
+    </main>
+
+    <footer class="border-top pt-3 mt-4">
+        <address><a href="mailto:ugai.takanori@gmail.com">ugai.takanori@gmail.com</a></address>
+    </footer>
+</body>
+</html>
