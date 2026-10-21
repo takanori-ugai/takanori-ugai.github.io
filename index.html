@@ -1,62 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>Home Page of T. Ugai</title>
-    <meta name="description" content="ome Page of T. Ugai">
+    <title>鵜飼孝典 | 研究・論文</title>
+    <meta name="description" content="鵜飼孝典のプロフィール、研究分野、公開論文をご紹介します。">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Home Page of T. Ugai">
-    <meta property="og:description" content="Home Page of T. Ugai">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NNN9K5W4');</script>
-<!-- End Google Tag Manager -->
-</HEAD>
-<BODY>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNN9K5W4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<H2>鵜飼孝典 (ugai.takanori@gmail.com) </H2>
-<img src="ugai/ugai2.gif" alt=Face>富士通で研究してます<p>
+    <meta property="og:title" content="鵜飼孝典 | 研究・論文">
+    <meta property="og:description" content="鵜飼孝典のプロフィール、研究分野、公開論文をご紹介します。">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --ink: #172a3a; --accent: #147d78; --paper: #f4f7f6; }
+        body { background: var(--paper); color: var(--ink); }
+        .topbar { background: #102c3b; }
+        .hero { background: linear-gradient(130deg, #e6f2ef 0%, #f5f8f7 65%, #e9f0f5 100%); }
+        .portrait { width: 132px; height: 132px; object-fit: cover; border: 5px solid rgba(255,255,255,.85); box-shadow: 0 1rem 2.5rem rgba(23,42,58,.12); }
+        .eyebrow { color: var(--accent); letter-spacing: .14em; }
+        .section-card { height: 100%; border: 1px solid #e3eae8; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem rgba(23,42,58,.04); }
+        .section-card a { color: var(--ink); text-decoration: none; }
+        .section-card a:hover { color: var(--accent); text-decoration: underline; }
+        .link-list li + li { margin-top: .7rem; }
+        .link-list a { text-decoration: none; }
+        .link-list a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header class="topbar py-3">
+        <nav class="container d-flex justify-content-between align-items-center" aria-label="言語">
+            <a class="text-white fw-semibold text-decoration-none" href="index.html">Takanori Ugai</a>
+            <a class="btn btn-sm btn-outline-light rounded-pill px-3" href="home.html" lang="en">English</a>
+        </nav>
+    </header>
 
-    <a href="home.html">英語版</a>
-<p>
-<UL>
-    <LI><a href="Japanese/profile.html">プロフィール</a></LI>
-    <LI><a href="Japanese/vitae.html">略歴</a></LI>
-    <LI><a href="Japanese/patents.html">特許一覧</a></LI>
-    <LI><a href="Japanese/JASI.html">日本経営情報学会定例研究会資料 (2011年2月19日)</a></LI>
-</UL>
-<p>
+    <main>
+        <section class="hero py-5 py-lg-6">
+            <div class="container py-lg-4">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-auto">
+                        <img class="portrait rounded-circle" src="ugai/ugai2.gif" alt="鵜飼孝典の写真">
+                    </div>
+                    <div class="col-lg">
+                        <p class="eyebrow text-uppercase fw-semibold small mb-2">Research &amp; Publications</p>
+                        <h1 class="display-5 fw-bold mb-3">鵜飼 孝典</h1>
+                        <p class="lead text-secondary mb-4">富士通で研究しています。形式的仕様記述、ソフトウェアプロセス、並列分散プログラミングなどに関心があります。</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a class="btn btn-success rounded-pill px-4" href="Japanese/profile.html">プロフィール</a>
+                            <a class="btn btn-outline-success rounded-pill px-4" href="Japanese/Papers.html">公開論文を見る</a>
+                            <a class="btn btn-outline-secondary rounded-pill px-4" href="mailto:ugai.takanori@gmail.com">メール</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    現在興味のある研究分野
-<UL>
-    <li><a href="Japanese/FDT.html">形式的仕様記述</A></LI>
-    <li><a href="Japanese/SoftwareProcess.html">ソフトウェアプロセス</A></LI>
-    <li><a href="Japanese/Parallel.html">並列分散プログラミング</A></LI>
-    <li><a href="Japanese/SoftwareDistribution.html">ネットワークを利用したソフトウェア配布,管理システム</A></LI>
-    <li> ナレッジマネジメント</LI>
-    <li> 組織学習</LI>
-    <LI> 要求工学</LI>
-</UL>
-<a href="Japanese/Papers.html"> これまでに公開した論文</a>
-<p>
+        <section class="container py-5 py-lg-6">
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4">
+                <div>
+                    <p class="eyebrow text-uppercase fw-semibold small mb-1">Explore</p>
+                    <h2 class="h3 fw-bold mb-0">研究と活動</h2>
+                </div>
+                <a class="link-success fw-semibold text-decoration-none" href="Japanese/Papers.html">公開論文一覧 <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="row g-3 g-lg-4">
+                <div class="col-md-6 col-xl-4">
+                    <article class="section-card card p-4">
+                        <h3 class="h5 fw-bold mb-3">研究分野</h3>
+                        <ul class="link-list list-unstyled mb-0">
+                            <li><a href="Japanese/FDT.html">形式的仕様記述</a></li>
+                            <li><a href="Japanese/SoftwareProcess.html">ソフトウェアプロセス</a></li>
+                            <li><a href="Japanese/Parallel.html">並列分散プログラミング</a></li>
+                            <li><a href="Japanese/SoftwareDistribution.html">ソフトウェアの配布・管理</a></li>
+                            <li class="text-secondary">ナレッジマネジメント・組織学習</li>
+                            <li class="text-secondary">要求工学</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <article class="section-card card p-4">
+                        <h3 class="h5 fw-bold mb-3">プロフィール</h3>
+                        <ul class="link-list list-unstyled mb-0">
+                            <li><a href="Japanese/profile.html">プロフィール</a></li>
+                            <li><a href="Japanese/vitae.html">略歴</a></li>
+                            <li><a href="Japanese/patents.html">特許一覧</a></li>
+                            <li><a href="Japanese/JASI.html">日本経営情報学会 定例研究会資料</a></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <article class="section-card card p-4">
+                        <h3 class="h5 fw-bold mb-3">関連資料・リンク</h3>
+                        <ul class="link-list list-unstyled mb-0">
+                            <li><a href="FDT-j.html">日本国内の形式仕様記述に関する研究</a></li>
+                            <li><a href="Z/z-faq.html">Z FAQ（日本語版）</a></li>
+                            <li><a href="RAISE/RAISE-faq.html">RAISE FAQ（日本語版）</a></li>
+                            <li><a href="http://www.comlab.ox.ac.uk/archive/formal-methods.html">Formal Methods（Oxford）</a></li>
+                            <li><a href="http://www.se.cs.titech.ac.jp/">佐伯研究室</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    その他
-<UL>
-    <LI><A HREF="FDT-j.html"> 日本国内の形式仕様記述に関する研究 </A></LI>
-    <li><a href="Z/z-faq.html">Z FAQ (日本語版)</A></LI>
-    <li><a href="RAISE/RAISE-faq.html">RAISE FAQ (日本語版)</A></LI>
-    <li><a href="http://www.comlab.ox.ac.uk/archive/formal-methods.html">HOME of formal method (UK)</A></LI>
-    <li><a href="http://www.se.cs.titech.ac.jp/">佐伯研究室のページ</a></LI>
-</UL>
-<HR>
-<address> ugai.takanori@gmail.com</address>
-</BODY>
-</HTML>
+    <footer class="border-top bg-white py-4">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2 text-secondary small">
+            <span>鵜飼 孝典</span>
+            <a class="link-secondary" href="mailto:ugai.takanori@gmail.com">ugai.takanori@gmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>

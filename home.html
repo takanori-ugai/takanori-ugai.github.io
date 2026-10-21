@@ -1,62 +1,91 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>Home Page of Takanori Ugai</title>
-    <meta name="description" content="Takanori Ugai, 鵜飼孝典">
+    <title>Takanori Ugai | Research &amp; Publications</title>
+    <meta name="description" content="Profile, research interests, and publications of Takanori Ugai.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Home Page of Takanori Ugai">
-    <meta property="og:description" content="Takanori Ugai, 鵜飼孝典">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8PD66S6W9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-V8PD66S6W9');
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80119222-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-80119222-1');
-    </script>
-</HEAD>
-<BODY>
-<H2>Takanori Ugai (ugai.takanori@gmail.com) </H2>
-<img src="ugai/ugai2.gif" alt=Face>
-<p>
-
-    <a href="index.html">Japanese Page</a>
-<p>
-
-    <a href="English/profile.html">Profile</a><BR>
-    <a href="English/vitae.html">Curriculum Vitae</a><BR>
-<p>
-
-    My Interesting Research Themes
-<UL>
-    <li><a href="English/FDT.html">Formal Description Technique</A>
-    <li><a href="English/SoftwareProcess.html">Software Process</A>
-    <li><a href="English/Parallel.html">Parallel/Distributed Programming</A>
-    <li><a href="English/SoftwareDistribution.html">Software Distribution and Maintenance</A>
-</UL>
-<a href="English/Papers.html"> Published Papers</a>
-<p>
-
-    Misc
-<UL>
-    <li><a href="Z/z-faq.html">Z FAQ (Japanese)</A>
-    <li><a href="RAISE/RAISE-faq.html">RAISE FAQ (Japanese)</A>
-    <li><a href="http://www.comlab.ox.ac.uk/archive/formal-methods.html">HOME of formal method (UK)</A>
-</UL>
-<HR>
-<address>ugai.takanori@gmail.com</address>
-</BODY>
-</HTML>
+    <meta property="og:title" content="Takanori Ugai | Research &amp; Publications">
+    <meta property="og:description" content="Profile, research interests, and publications of Takanori Ugai.">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --ink: #172a3a; --accent: #147d78; --paper: #f4f7f6; }
+        body { background: var(--paper); color: var(--ink); }
+        .topbar { background: #102c3b; }
+        .hero { background: linear-gradient(130deg, #e6f2ef 0%, #f5f8f7 65%, #e9f0f5 100%); }
+        .portrait { width: 132px; height: 132px; object-fit: cover; border: 5px solid rgba(255,255,255,.85); box-shadow: 0 1rem 2.5rem rgba(23,42,58,.12); }
+        .eyebrow { color: var(--accent); letter-spacing: .14em; }
+        .section-card { height: 100%; border: 1px solid #e3eae8; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem rgba(23,42,58,.04); }
+        .section-card a { color: var(--ink); text-decoration: none; }
+        .section-card a:hover { color: var(--accent); text-decoration: underline; }
+        .link-list li + li { margin-top: .7rem; }
+    </style>
+</head>
+<body>
+    <header class="topbar py-3">
+        <nav class="container d-flex justify-content-between align-items-center" aria-label="Language">
+            <a class="text-white fw-semibold text-decoration-none" href="home.html">Takanori Ugai</a>
+            <a class="btn btn-sm btn-outline-light rounded-pill px-3" href="index.html" lang="ja">日本語</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero py-5">
+            <div class="container py-4">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-auto"><img class="portrait rounded-circle" src="ugai/ugai2.gif" alt="Portrait of Takanori Ugai"></div>
+                    <div class="col-lg">
+                        <p class="eyebrow text-uppercase fw-semibold small mb-2">Research &amp; Publications</p>
+                        <h1 class="display-5 fw-bold mb-3">Takanori Ugai</h1>
+                        <p class="lead text-secondary mb-4">Researcher at Fujitsu, with interests in formal specification, software processes, and parallel and distributed programming.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a class="btn btn-success rounded-pill px-4" href="English/profile.html">Profile</a>
+                            <a class="btn btn-outline-success rounded-pill px-4" href="English/Papers.html">Published papers</a>
+                            <a class="btn btn-outline-secondary rounded-pill px-4" href="mailto:ugai.takanori@gmail.com">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4">
+                <div><p class="eyebrow text-uppercase fw-semibold small mb-1">Explore</p><h2 class="h3 fw-bold mb-0">Research &amp; resources</h2></div>
+                <a class="link-success fw-semibold text-decoration-none" href="English/Papers.html">All publications <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="row g-3 g-lg-4">
+                <div class="col-md-6 col-xl-4"><article class="section-card card p-4">
+                    <h3 class="h5 fw-bold mb-3">Research interests</h3>
+                    <ul class="link-list list-unstyled mb-0">
+                        <li><a href="English/FDT.html">Formal description techniques</a></li>
+                        <li><a href="English/SoftwareProcess.html">Software processes</a></li>
+                        <li><a href="English/Parallel.html">Parallel and distributed programming</a></li>
+                        <li><a href="English/SoftwareDistribution.html">Software distribution and maintenance</a></li>
+                    </ul>
+                </article></div>
+                <div class="col-md-6 col-xl-4"><article class="section-card card p-4">
+                    <h3 class="h5 fw-bold mb-3">About</h3>
+                    <ul class="link-list list-unstyled mb-0">
+                        <li><a href="English/profile.html">Profile</a></li>
+                        <li><a href="English/vitae.html">Curriculum vitae</a></li>
+                        <li><a href="English/Papers.html">Published papers</a></li>
+                    </ul>
+                </article></div>
+                <div class="col-md-6 col-xl-4"><article class="section-card card p-4">
+                    <h3 class="h5 fw-bold mb-3">Resources</h3>
+                    <ul class="link-list list-unstyled mb-0">
+                        <li><a href="Z/z-faq.html">Z FAQ (Japanese)</a></li>
+                        <li><a href="RAISE/RAISE-faq.html">RAISE FAQ (Japanese)</a></li>
+                        <li><a href="http://www.comlab.ox.ac.uk/archive/formal-methods.html">Formal methods (Oxford)</a></li>
+                    </ul>
+                </article></div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-top bg-white py-4">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2 text-secondary small">
+            <span>Takanori Ugai</span><a class="link-secondary" href="mailto:ugai.takanori@gmail.com">ugai.takanori@gmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>
