@@ -1,33 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>Formal Specification Languages</title>
-    <meta name="description" content="Formal Specification Languages">
+    <title>Formal Description Techniques and Specification Languages</title>
+    <meta name="description" content="An introduction to formal description techniques, current ISO standards for Z and LOTOS, and resources for learning formal specification.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Formal Specification Languages">
-    <meta property="og:description" content="Formal Specification Languages">
-
+    <meta property="og:title" content="Formal Description Techniques and Specification Languages">
+    <meta property="og:description" content="An introduction to formal description techniques, current ISO standards for Z and LOTOS, and resources for learning formal specification.">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/site.css" rel="stylesheet">
+    <style>
+        .fdt-hero { margin: 0 calc(clamp(1rem, 4vw, 3rem) * -1) 2rem; padding: 2.5rem clamp(1rem, 4vw, 3rem); background: linear-gradient(130deg, #e6f2ef, #f5f8f7 65%, #e9f0f5); }
+        .fdt-label { color: #147d78; letter-spacing: .12em; }
+        .resource-card { height: 100%; border: 1px solid #e3eae8; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem rgba(23,42,58,.04); }
+        .resource-card a { text-decoration: none; }
+        .resource-card a:hover { text-decoration: underline; }
+    </style>
 </head>
-<BODY>
-<nav class="site-nav d-flex justify-content-between align-items-center" aria-label="Language"><a class="site-brand" href="../home.html">Takanori Ugai</a><a href="../index.html" lang="ja">日本語</a></nav>
+<body>
+    <nav class="site-nav d-flex justify-content-between align-items-center" aria-label="Language">
+        <a class="site-brand" href="../home.html">Takanori Ugai</a>
+        <a href="../index.html" lang="ja">日本語</a>
+    </nav>
 
-<H2>Formal Specification Languages</H2>
+    <main>
+        <header class="fdt-hero">
+            <p class="fdt-label text-uppercase fw-semibold small mb-2">Formal Description Techniques</p>
+            <h1 class="display-6 fw-bold">Formal specification languages</h1>
+            <p class="lead text-secondary mb-0">Formal specifications describe system states or behaviour using a defined syntax and semantics. They make assumptions explicit and allow models to be analysed, tested, or checked against stated properties.</p>
+        </header>
 
-<UL>
-    <li><a href="Papers/9302D.html">
-        A Proposal of An extended LOTOS with Reflection</a>
-    <li> Formal Methods for RLOTOS, <a href="Papers/9303D.html">Supporting Tools</a>
-    <li><a href="Papers/9301D.html"> Software Process Description in RLOTOS</a>
-    <li> Standarization Activity of <a href="ftp://ftp.cs.titech.ac.jp/lab/saeki/pub/z/zforum/ZSTAN">Z</a>,
-        <a href="ftp://ftp.cs.titech.ac.jp/lab/saeki/pub/VDM/vdmsl"> VDM</a>,
-        and LOTOS
-</UL>
-<HR>
-<address> ugai.takanori@gmail.com</address>
-</BODY>
-</HTML>
+        <section class="mb-5" aria-labelledby="overview">
+            <h2 id="overview" class="h3 mb-3">What formal specification can do</h2>
+            <p>Formal description techniques (FDTs) provide mathematical notations for describing systems precisely. Different languages emphasize different views: Z is a state-based notation, while LOTOS and E-LOTOS describe the behaviour of concurrent and distributed systems. VDM is a model-based method with executable specifications and tool-supported analysis.</p>
+            <p class="mb-0">A formal model can expose ambiguity, inconsistency, or violations of properties within the scope of the model and analysis. It does not automatically prove that an implementation is correct: the model, assumptions, properties, and links to implementation all matter.</p>
+        </section>
+
+        <section class="mb-5" aria-labelledby="standards">
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+                <div><p class="fdt-label text-uppercase fw-semibold small mb-1">International standards</p><h2 id="standards" class="h3 mb-0">Z, LOTOS, and E-LOTOS</h2></div>
+                <span class="badge text-bg-light border">Status checked: 21 October 2026</span>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">Z — ISO/IEC 13568:2002</h3>
+                        <p>The standard defines the syntax, type system, and semantics of Z notation. ISO records the edition as current after its review and confirmation in September 2026.</p>
+                        <a class="fw-semibold" href="https://www.iso.org/standard/21573.html" target="_blank" rel="noopener noreferrer">ISO/IEC 13568:2002 (ISO) <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">LOTOS — ISO 8807:1989</h3>
+                        <p>A formal description technique for the behaviour of distributed and concurrent systems. ISO records the standard as current after its review and confirmation in 2019.</p>
+                        <a class="fw-semibold" href="https://www.iso.org/standard/16258.html" target="_blank" rel="noopener noreferrer">ISO 8807:1989 (ISO) <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">E-LOTOS — ISO/IEC 15437:2001</h3>
+                        <p>An enhanced LOTOS language for describing behavioural aspects of distributed and concurrent systems. ISO records the standard as current after its review and confirmation in 2008.</p>
+                        <div class="d-flex flex-column gap-2">
+                            <a class="fw-semibold" href="https://www.iso.org/standard/27680.html" target="_blank" rel="noopener noreferrer">ISO/IEC 15437:2001 (ISO) <span aria-hidden="true">↗</span></a>
+                            <a href="../E-LOTOS.html">E-LOTOS documents on this site</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <p class="text-secondary small mt-3 mb-0">“Current” describes the status of an ISO publication, not how widely a language is used or whether it is the best choice for a new project. Check ISO for later status changes.</p>
+        </section>
+
+        <section class="mb-5" aria-labelledby="resources">
+            <p class="fdt-label text-uppercase fw-semibold small mb-1">Learn and explore</p>
+            <h2 id="resources" class="h3 mb-3">Tools, guides, and background</h2>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">VDM and Overture</h3>
+                        <p>The Overture community maintains language manuals, user guides, tutorials for VDM-SL, VDM++, and VDM-RT, and examples. Its resources also describe using VDM in a development process.</p>
+                        <div class="d-flex flex-column gap-2">
+                            <a class="fw-semibold" href="https://www.overturetool.org/documentation/" target="_blank" rel="noopener noreferrer">Overture documentation <span aria-hidden="true">↗</span></a>
+                            <a href="https://www.overturetool.org/documentation/tutorials.html" target="_blank" rel="noopener noreferrer">VDM tutorials <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="resource-card card p-4">
+                        <h3 class="h5 fw-bold">Formal methods resources from Japan</h3>
+                        <p>IPA’s practitioner materials include introductory guidance, modelling exercises, and case studies. This is an archive of a programme that ended in 2013; the materials remain available for reference.</p>
+                        <div class="d-flex flex-column gap-2">
+                            <a class="fw-semibold" href="https://www.ipa.go.jp/archive/digital/iot-en-ci/keishikisyuho/keishikisyuho.html" target="_blank" rel="noopener noreferrer">IPA: Formal Methods for Practitioners (Japanese) <span aria-hidden="true">↗</span></a>
+                            <a href="https://research.nii.ac.jp/~f-ishikawa/vdm/" target="_blank" rel="noopener noreferrer">NII: VDM++ resources (Japanese) <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5" aria-labelledby="research">
+            <p class="fdt-label text-uppercase fw-semibold small mb-1">Research archive</p>
+            <h2 id="research" class="h3 mb-3">RLOTOS research on this site</h2>
+            <p>The following papers describe earlier work on extending LOTOS with reflection and using RLOTOS to describe software processes. They are historical research records rather than current introductions to the state of formal methods.</p>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="Papers/9302D.html">A Proposal of an Extended LOTOS with Reflection</a></li>
+                <li class="list-group-item"><a href="Papers/9303D.html">Formal Methods for RLOTOS: Supporting Tools</a></li>
+                <li class="list-group-item"><a href="Papers/9301D.html">Software Process Description in RLOTOS</a></li>
+            </ul>
+        </section>
+
+        <p class="text-secondary small">Links and standard status checked on 21 October 2026. Refer to the standards bodies and tool communities for the latest versions.</p>
+    </main>
+
+    <footer class="border-top pt-3 mt-4">
+        <address><a href="mailto:ugai.takanori@gmail.com">ugai.takanori@gmail.com</a></address>
+    </footer>
+</body>
+</html>
